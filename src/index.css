@@ -105,7 +105,13 @@ a {
 .w-45vw {
   width: 45vw;
 }
-
+.custom-media-select {
+  border-radius: 10px;
+  opacity: 0.9;
+}
+.text-custom-blue {
+  color: #004368;
+}
 @media only screen and (max-width: 767px) {
   .flex-wrap-xs {
     flex-wrap: wrap;

@@ -1,12 +1,32 @@
 import React, { useState } from "react";
+import SelectMedia from "./SelectMedia";
 export default function AddExercise() {
+  const [open, setOpen] = useState(false);
+  const [type, setType] = useState("");
+  const [file, setFile] = useState("");
   return (
     <div className="col-sm-12 text-center">
       <h3>Add Excercise</h3>
       <div className="col-sm-12 text-left d-flex">
-        <div className="col-sm-4 justify-content-center align-items-center d-flex flex-column">
-          <div className="plus-circle img-circle background-active shadow client-image d-flex text-center justify-content-center align-items-center p-2 mr-2">
-            <i className="fas fa-plus text-grey font-36px text-light"></i>
+        <div className="col-sm-4 justify-content-center align-items-center d-flex flex-column position-relative">
+          {open && (
+            <SelectMedia
+              type={type}
+              setType={setType}
+              setFile={setFile}
+              setOpen={setOpen}
+            />
+          )}
+          <div
+            className="plus-circle img-circle background-active shadow client-image d-flex text-center justify-content-center align-items-center p-2 mr-2"
+            type="button"
+            onClick={() => setOpen(!open)}
+          >
+            {file === "" ? (
+              <i className="fas fa-plus text-grey font-36px text-light"></i>
+            ) : (
+              <i className="far fa-check-circle text-grey font-36px text-light"></i>
+            )}
           </div>
           <h4 className="py-2">Add Media</h4>
         </div>

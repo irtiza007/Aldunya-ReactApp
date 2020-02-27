@@ -6,16 +6,16 @@ const Client = props => {
       <div className="col-sm-12 my-2 p-3 border-radius-custom shadow overflow-auto">
         <Appointments title="Excercises" row={true} modelId="addExcersices" />
       </div>
-      <div className="col-sm-12 p-3 d-flex">
-        <div className="col-sm-6 text-center p-3 border-radius-custom shadow mr-2">
-          <video controls className="w-45vw">
+      <div className="col-sm-12 p-3 d-flex flex-wrap-xs ">
+        <div className="col-md-6 col-sm-12 text-center p-3 border-radius-custom shadow mr-2">
+          <video controls className="h-100 w-100">
             <source
               src="https://www.youtube.com/watch?v=A99obr2Jmac"
               type="video/mp4"
             />
           </video>
         </div>
-        <div className="col-sm-6 p-3 border-radius-custom shadow">
+        <div className="col-md-6 col-sm-12 p-3 border-radius-custom shadow">
           <h3>Description</h3>
           <p>
             Contrary to popular belief, Lorem Ipsum is not simply random text.
