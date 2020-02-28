@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
 }
 
 .avatar-img {
@@ -112,6 +112,24 @@ a {
 .text-custom-blue {
   color: #004368;
 }
+.logout {
+  border-radius: 4px;
+  opacity: 0.8;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+.avatar-img:hover .logout {
+  display: block;
+}
+.triangle-4 {
+  width: 60px;
+  height: 30px;
+  border-bottom: solid 30px rgb(200, 30, 50);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+}
+
 @media only screen and (max-width: 767px) {
   .flex-wrap-xs {
     flex-wrap: wrap;
