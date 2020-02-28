@@ -27,6 +27,7 @@ export default function AddCLient() {
       <form
         className="col-sm-12 text-left d-flex flex-wrap"
         onSubmit={handleSubmit(onSubmit)}
+        id="addClient"
       >
         <div className="col-sm-4 justify-content-center align-items-center d-flex flex-column">
           <div
@@ -189,6 +190,7 @@ export default function AddCLient() {
         <button
           className="btn btn-custom"
           type="submit"
+          form="addClient"
           onClick={handleSubmit(onSubmit)}
         >
           Save

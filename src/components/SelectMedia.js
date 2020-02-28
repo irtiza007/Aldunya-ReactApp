@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 
 export default function SelectMedia({ type, setType, setFile, setOpen }) {
   const imageFile = useRef(null);
@@ -19,38 +19,38 @@ export default function SelectMedia({ type, setType, setFile, setOpen }) {
     videoFile.current.click();
   };
   return (
-    <div className="m-2 custom-media-select text-custom-blue border border-radius shadow position-absolute bg-white">
+    <div className='m-2 custom-media-select text-custom-blue border border-radius shadow position-absolute bg-white'>
       <input
-        type="file"
-        id="image"
-        accept="image/x-png,image/gif,image/jpeg"
+        type='file'
+        id='image'
+        accept='image/x-png,image/gif,image/jpeg'
         ref={imageFile}
-        style={{ display: "none" }}
+        style={{ display: 'none' }}
         onChange={onFileChange}
-        name="image"
+        name='image'
       />
       <div
-        className="p-2 font-weight-bold"
-        type="button"
-        onClick={() => onImageClick("image")}
+        className='p-2 font-weight-bold'
+        type='button'
+        onClick={() => onImageClick('image')}
       >
-        <i class="fas fa-images mx-2"></i> Upload Picture
+        <i class='fas fa-images mx-2'></i> Upload Picture
       </div>
       <input
-        type="file"
-        id="video"
-        accept="video/mp4"
+        type='file'
+        id='video'
+        accept='video/mp4'
         ref={videoFile}
-        style={{ display: "none" }}
+        style={{ display: 'none' }}
         onChange={onFileChange}
-        name="video"
+        name='video'
       />
       <div
-        className="p-2 font-weight-bold"
-        type="button"
-        onClick={() => onVideoClick("video")}
+        className='p-2 font-weight-bold'
+        type='button'
+        onClick={() => onVideoClick('video')}
       >
-        <i class="fas fa-video mx-2"></i> Upload Video
+        <i className='fas fa-video mx-2'></i> Upload Video
       </div>
     </div>
   );

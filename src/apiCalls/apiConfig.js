@@ -1,4 +1,4 @@
 const config = {
-  loginRoute: "/admin/signin"
+  loginRoute: 'signin/admin'
 };
 export default config;
