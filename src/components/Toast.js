@@ -1,36 +1,36 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 import {
   NotificationManager,
   NotificationContainer
-} from "react-notifications";
-import "react-notifications/lib/notifications.css";
+} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
 const ToastContainer = () => {
   useEffect(() => {
     return () => {
       return () => {
-        console.log("cleaned up");
+        console.log('cleaned up');
       };
     };
   }, []);
 
   return <NotificationContainer />;
 };
-const createNotification = (type, message, title, duration = 2000) => {
+const createNotification = (type, message, title, duration = 1500) => {
   switch (type) {
-    case "info":
+    case 'info':
       NotificationManager.info(message, title, duration);
       break;
-    case "success":
+    case 'success':
       NotificationManager.success(message, title, duration);
       break;
-    case "warning":
+    case 'warning':
       NotificationManager.warning(message, title, duration);
       break;
-    case "error":
+    case 'error':
       NotificationManager.error(message, title, duration);
       break;
     default:
-      NotificationManager.info("tada");
+      NotificationManager.info('tada');
   }
 };
 

@@ -27,7 +27,7 @@ export default function Login() {
           setTimeout(() => {
             setLoading(false);
             history.push('/');
-          }, 2000);
+          }, 1500);
         })
         .catch(err => {
           setLoading(false);
