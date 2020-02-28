@@ -46,6 +46,7 @@ const Navbar = () => {
                         history.push('/login');
                       }}
                     >
+                      <i class='fas fa-sign-out-alt mr-1'></i>{' '}
                       <span>Logout</span>
                     </div>
                   </div>
